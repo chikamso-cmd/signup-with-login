@@ -1,0 +1,251 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  font-family: titillium-web;
+}
+body{
+   background: linear-gradient(rgba(225, 123, 123, 0.252), rgba(223, 223, 124, 0.374)), url(images/499471.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+/* fonts css styles */
+.titillium-web-extralight {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 200;
+   font-style: normal;
+ }
+ 
+ .titillium-web-light {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+ 
+ .titillium-web-regular {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .titillium-web-semibold {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+ 
+ .titillium-web-bold {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ .titillium-web-black {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 900;
+   font-style: normal;
+ }
+ 
+ .titillium-web-extralight-italic {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 200;
+   font-style: italic;
+ }
+ 
+ .titillium-web-light-italic {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 300;
+   font-style: italic;
+ }
+ 
+ .titillium-web-regular-italic {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+ 
+ .titillium-web-semibold-italic {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 600;
+   font-style: italic;
+ }
+ 
+ .titillium-web-bold-italic {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+ }
+/* fonts */
+.container{
+   width: 400px;
+   height: 450px;
+   backdrop-filter: blur(7px);
+   box-shadow: 6px 0px 90px rgba(0, 0, 0, 0.3);
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   padding: 10px;
+   border-radius: 10px;
+}
+
+/* .profile-photo{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background-color: #fff;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   top: 90%;
+   overflow: hidden;
+} */
+.header-text{
+   color: #fff;
+   text-transform: capitalize;
+   text-align: center;
+   font-size: 19px;
+   font-family: titillium-web;
+
+}
+.wrapper{
+   overflow: hidden;
+   position: relative;
+   /* margin-top: 20px; */
+   display: block;
+}
+#login{
+   /* background-color: white; */
+   padding: 9px;
+}
+.col{
+   width: 100%;
+   position: relative;
+  padding: 10px;
+}
+input[type='email'],
+input[type='password']{
+   width: 100%;
+   height: 50px;
+   border-radius:50px;
+   background: rgba(255, 255, 255, 0.439);
+   margin-top: 9px;
+   padding: 10px;
+   font-family: titillium-web;
+   border: 0;
+}
+input[type='email']::placeholder,
+input[type='password']::placeholder{
+   color: #111;
+   text-transform: capitalize;
+}
+input[type='email']:focus,
+input[type='password']:focus{
+  border: 0;
+  outline: 0;
+}
+button{
+   width: 100%;
+   padding: 12px;
+   background: #02ffeeae;
+   border: 0;
+   font-size: 15px;
+   color: #fff;
+   font-weight: bolder;
+   cursor: pointer;
+   transition: all ease-in-out 0.6s;
+   font-family: titillium-web;
+   border-radius:50px;
+}
+button:hover{
+   background: #36e3d7;
+}
+.botom{
+   display: block;
+}
+.coll a{
+   color: #fff;
+   text-transform: capitalize;
+   padding-top: 10px;
+   text-decoration: none;
+   margin-left: 10px;
+   font-size: 13px;
+}
+.login-selections{
+   margin: 10px;
+   position: relative;
+}
+.row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.login-selections hr{
+   width: 20%;
+   margin: 8px;
+   color: #fff;
+   border: 1px solid #fff;
+}
+.login-selections h5{
+   color: #fff;
+   font-family: titillium-web;
+}
+.login-selections .socials{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   
+}
+.login-selections .socials a{
+   color: #fff;
+   text-decoration: none;
+   margin: 10px;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: titillium-web;
+   border-radius:50px;
+}
+.login-selections .socials .facebook{
+   background: blue;
+   padding: 7px;
+   transition: all 0.5s;
+}
+.login-selections .socials .facebook:hover{
+   border-radius: 3px;
+}
+.login-selections .socials .instagram{
+   background: rgb(255, 3, 70);
+   padding: 7px;
+ transition: all 0.3s;
+
+}
+.login-selections .socials .instagram:hover{
+   border-radius: 3px;
+}
+.bottom{
+   width: 100%;
+   text-align: center;
+}
+.bottom span{
+   color: #fff;
+  font-size: 10px;
+}
+.bottom span a{
+   color: #fff;
+}
+.bottom span a:hover{
+   color: blue;
+}
+i{
+   padding-right: 10px;
+}
+#error-msg{
+   margin-top: 5px;
+   padding: 3px;
+   color: rgb(255, 0, 0);
+   text-transform: capitalize;
+}
+

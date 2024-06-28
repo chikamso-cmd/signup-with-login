@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header-text">login Form</h1>
+      <div class="wrapper">
+        <form id="login">
+          <!-- email -->
+          <div class="col">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="usename or email*" autocomplete="on"
+            />
+          </div>
+<!-- password -->
+          <div class="col">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password*" autocomplete="on"
+            />
+            <h6 id="error-msg"></h6>
+            <h6 id="accept"></h6>
+          </div>
+          <div class="coll">
+            <a href="forgotpassword.html">forgot password?</a>
+          </div>
+          <!-- login btn -->
+          <div class="col">
+            <button type="submit" id="submit"> <i class="fa-solid fa-right-to-bracket"></i>Login</button>
+          </div>
+        </form>
+
+        <div class="login-selections">
+          <div class="row">
+            <hr />
+            <h5>Or login with</h5>
+            <hr />
+          </div>
+          <!-- social media btns -->
+          <div class="socials">
+            <a href="http://facebook.com" class="facebook"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="http://instagram.com" class="instagram"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            
+          </div>
+        </div>
+
+        <div class="bottom">
+          <span>Don't have an account? <a href="signup.html">Create new account</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
