@@ -9,7 +9,7 @@ const fname = document.getElementById("fname").value;
 const lname = document.getElementById("lname").value;
 const email = document.getElementById("email").value;
 const password = document.getElementById("password").value;
-const confirmpassword = document.getElementById("confirm-password").value;
+const confirmPassword = document.getElementById("confirm-password").value;
 const checkbox = document.getElementById("mycheckbox");
 
 if (fname === "" || lname === "") {
@@ -30,12 +30,12 @@ else if (email === ""){
 }  else if (password.length < 8){
     console.log("password must be at least 8 char long")
     message.textContent = "password must be at least 8 char long" 
-} else if (password !== confirmpassword){
+} else if (password !== confirmPassword){
     console.log ("password does not match")
     message.textContent = "password does not match"
-}if (mycheckbox.checked){
-    console.log("registration sucessful")
-    alert("registration sucessful")
+}else if (checkbox && checked || password === '' || confirmPassword === "" || fname === "" || lname === "" ||email === ""){
+    console.log("must fill all input fields")
+    alert("must fill all input fields")
 
 }else{ console.log("please check this to continue")
 message.textContent = "please tick the checkbox to continue"

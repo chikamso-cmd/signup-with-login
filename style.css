@@ -89,18 +89,6 @@ body{
    padding: 10px;
    border-radius: 10px;
 }
-
-/* .profile-photo{
-   width: 60px;
-   height: 60px;
-   border-radius: 50%;
-   background-color: #fff;
-   position: absolute;
-   left: 50%;
-   transform: translate(-50%);
-   top: 90%;
-   overflow: hidden;
-} */
 .header-text{
    color: #fff;
    text-transform: capitalize;
@@ -111,12 +99,9 @@ body{
 }
 .wrapper{
    overflow: hidden;
-   position: relative;
-   /* margin-top: 20px; */
    display: block;
 }
 #login{
-   /* background-color: white; */
    padding: 9px;
 }
 .col{
@@ -247,5 +232,56 @@ i{
    padding: 3px;
    color: rgb(255, 0, 0);
    text-transform: capitalize;
+}
+@media (max-width: 425px) {
+   .container{
+      width: 350px;
+      height: 450px;
+      backdrop-filter: blur(7px);
+      box-shadow: 6px 0px 90px rgba(0, 0, 0, 0.3);
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      border-radius: 10px;
+   }
+}
+@media (max-width: 375px) {
+   .container{
+      width: 300px;
+      height: 450px;
+      backdrop-filter: blur(7px);
+      box-shadow: 6px 0px 90px rgba(0, 0, 0, 0.3);
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      border-radius: 10px;
+   }
+}
+@media (max-width: 320px) {
+   .container{
+      width: 270px;
+      height: 450px;
+      backdrop-filter: blur(7px);
+      box-shadow: 6px 0px 90px rgba(0, 0, 0, 0.3);
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      border-radius: 10px;
+   }
+   .login-selections .socials a{
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      font-family: titillium-web;
+      border-radius:50px;
+   }
 }
 
